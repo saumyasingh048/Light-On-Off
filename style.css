@@ -1,0 +1,96 @@
+/* ******************** */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap");
+/* ******************** */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ******************** */
+/* Root - Variables */
+:root {
+  --body-color: #52006a;
+  --primary-heading-font-family: "Montserrat", sans-serif;
+  --primary-heading-font-size: 2.5rem;
+  --primary-heading-font-color: #ff7600;
+  --button-font-family: "Roboto Mono", monospace;
+  --button-font-size: 1.3rem;
+  --button-font-color: #000000;
+  --button-color: #ff7600;
+  --bulb-off-color: #dddddd;
+  --bulb-on-color: #ffc107;
+}
+
+/* ******************** */
+/* Body */
+body {
+  height: 100vh;
+  background-color: var(--body-color);
+}
+/* ******************** */
+/* Main Container */
+.container {
+  width: 90%;
+  height: fit-content;
+}
+/* ******************** */
+/* Buttons */
+.btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin: 20px 15px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  color: var(--button-font-color);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+}
+.btn:hover {
+  background-color: #fd9337;
+  transition: all 0.3s ease-in-out none;
+}
+/* ******************** */
+/* Bulb - Fontawesome Icon */
+.bulb {
+  font-size: 18rem;
+  color: var(--bulb-off-color);
+  margin: 20px 0px;
+}
+/* ******************** */
+/* Utility Classes */
+.primary-heading {
+  font-family: var(--primary-heading-font-family);
+  font-size: var(--primary-heading-font-size);
+  color: var(--primary-heading-font-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  margin: 15px;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Media Query */
+@media screen and (max-device-width: 540px) {
+  .primary-heading {
+    text-align: center;
+  }
+}
